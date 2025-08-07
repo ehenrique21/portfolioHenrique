@@ -3,9 +3,11 @@
 * {
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-
-    background-color: black;
     color: white;
+}
+
+body {
+    background-color: #000;
 }
 
 .main {
@@ -13,5 +15,10 @@
     padding: .5rem;
     border: 1px solid #FFF;
     border-radius: 1rem;
+
+    background-image: 
+    linear-gradient(45deg,#1A2A80, #3B38A0,
+    #000,#3B38A0, #1A2A80);
+
 }
 
