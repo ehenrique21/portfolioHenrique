@@ -17,8 +17,8 @@ body {
     border-radius: 1rem;
 
     background-image: 
-    linear-gradient(45deg,#1A2A80, #3B38A0,
-    #000,#3B38A0, #1A2A80);
+    linear-gradient(135deg, #3B38A0, #1A2A80, #001f3f, #000 50%,
+    #001f3f,#1A2A80, #3B38A0);
 
 }
 
