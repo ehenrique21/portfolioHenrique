@@ -46,6 +46,13 @@
 
 .acordeon .content {
     max-height: 0;
-    overflow: hidden; /*Esconde o conteúdo que está fora da altura máxima*/
+    padding: 0; 
+    overflow: hidden;
+    opacity: 0; /*Esconde o conteúdo que está fora da altura máxima*/
     transition: max-height 0.3s ease-in-out; /*Animação*/
 }
+
+.acordeon.open .content {
+    opacity: 1;
+}
+
