@@ -7,7 +7,13 @@
 }
 
 body {
+
     background-color: #000;
+
+    background-image: 
+    linear-gradient(135deg, #3B38A0, #1A2A80, #001f3f, #000 50%,
+    #001f3f,#1A2A80, #3B38A0);
+    background-repeat: no-repeat;
 }
 
 .main {
@@ -16,9 +22,16 @@ body {
     border: 1px solid #FFF;
     border-radius: 1rem;
 
-    background-image: 
-    linear-gradient(135deg, #3B38A0, #1A2A80, #001f3f, #000 50%,
-    #001f3f,#1A2A80, #3B38A0);
+}
 
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+
+    .main::before, .main::after {
+        width: 70vw
+    }
 }
 
