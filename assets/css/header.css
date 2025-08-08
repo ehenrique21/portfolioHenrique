@@ -50,6 +50,14 @@
     gap: .25rem;
 }
 
+.header .information p a {
+    text-decoration: none;
+}
+
+.header .information p:hover {
+    text-decoration: underline;
+}
+
 .header .information p::before {
     content: '';
     display: inline-block;
