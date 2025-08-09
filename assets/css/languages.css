@@ -1,33 +1,25 @@
 .languages {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
+ display: flex;
+ list-style: none;
+ gap: 100px;
+ text-align: center;
+ justify-content: center;
 }
-
 .languages li {
-    margin-right: 1rem;
-    padding: 1rem;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: 700;
-    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
 }
 
-.languages li::before{
-    content:'';
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background-image: url('../images/icons/check.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: .125rem;
+.languages li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: currentColor; 
+    transition: width 0.3s ease; 
+}
+.languages li:hover::after {
+    width: 100%; 
 }

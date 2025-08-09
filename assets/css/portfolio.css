@@ -1,47 +1,23 @@
-.portfolio {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    list-style: none;
+.portifólio {
+ flex-wrap: 10px
 }
 
-.portfolio li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 1rem 0;
-    padding: 1rem;
+.portifólio {
+    position: relative;
+    cursor: pointer;
 }
 
-.portfolio li .title {
-    margin-bottom: .5rem;
-    font-weight: 700;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.portifólio ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: currentColor; 
+    transition: width 0.3s ease; 
 }
 
-.portfolio li a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-.portfolio li a:hover {
-    text-decoration: underline;
-}
-
-.portfolio li .title::before{
-    content:'';
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.25rem;
-    background-image: url('../images/icons/github.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: .25rem;
+.portifólio :hover::after {
+    width: 100%; 
 }

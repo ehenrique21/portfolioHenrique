@@ -4,14 +4,14 @@
     width: 100%;
     margin: 1rem 0;
     border-radius: 1rem;
-    border: 1px solid #FFF;
+    border: 1px solid #4d6ff6;
     transition: .25s;
 }
 
 .acordeon.open,
 .acordeon:hover {
-    background-color: #55569E;
-    border-color: #55569E;
+    background-color: #030139;
+    border-color: #767678;
 }
 
 .acordeon .trigger {
@@ -48,8 +48,8 @@
     max-height: 0;
     padding: 0 1rem; 
     overflow: hidden;
-    opacity: 0; /*Esconde o conteúdo que está fora da altura máxima*/
-    transition: max-height 0.3s ease-in-out; /*Animação*/
+    opacity: 0; 
+    transition: max-height 0.3s ease-in-out; 
 }
 
 .acordeon.open .content {
