@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
+<html lang="en"> <!-- Idioma principal do conteúdo -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o site se ajustar em dispositivos móveis -->
+
+    <!-- Reset de estilos para manter consistência entre navegadores -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS global e arquivos de estilo separados por seção -->
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/acordeon.css">
@@ -14,13 +18,18 @@
     <link rel="stylesheet" href="./assets/css/portfolio.css">
     <link rel="stylesheet" href="./assets/css/experience.css">
     <link rel="stylesheet" href="./assets/css/skills.css">
+
+    <!-- ⚠ Aqui está linkado um arquivo .js como se fosse CSS (provavelmente um erro) -->
     <link rel="stylesheet" href="./js/acordeon.js">
 
-    <title>Portfolio - Henrique Inacio</title>
+    <title>Portfolio - Henrique Inacio</title> <!-- Título da aba do navegador -->
 </head>
 
 <body>
+    <!-- Conteúdo principal -->
     <main class="main">
+
+        <!-- Cabeçalho com foto e informações pessoais -->
         <header class="header">
             <img class="photo" src="./assets/images/IMAGENS.jpg" alt="my photo">
             <h1 class="title">Olá,<br> eu sou o Henrique Inacio</h1>
@@ -36,10 +45,12 @@
             </div>
         </header>
 
+        <!-- Seção de habilidades (hard e soft skills) -->
         <section class="acordeon">
             <button class="trigger">Skills</button>
             <div class="content">
                 <div class="skills">
+                    <!-- Habilidades técnicas -->
                     <div class="hard-skills">
                         <h3>Hard Skills</h3>
                         <ul class="hard">
@@ -48,29 +59,33 @@
                             <li class="js"><img src="./assets/images/icons/js-icon.svg" alt="javaScript icon"></li>
                         </ul>
                     </div>
+                    <!-- Habilidades interpessoais -->
                     <div class="soft-skills">
                         <h3>Soft Skills</h3>
                         <ul class="soft">
                             <li>Facilidade de Comunicação</li>
                             <li>Organização</li>
                             <li>Trabalho em Equipe</li>
-                            <li src="#">Flexibilidade</li>
+                            <li>Flexibilidade</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Seção de idiomas -->
         <section class="acordeon">
             <button class="trigger">Idiomas</button>
             <div class="content">
                 <ul class="languages">
                     <li class="portugues">Português ✅</li>
                     <br>
-                    <li class="ingles">Inglês basico ✅</li>
+                    <li class="ingles">Inglês básico ✅</li>
                 </ul>
             </div>
         </section>
+
+        <!-- Seção de portfólio -->
         <section class="acordeon">
             <button class="trigger">Portfólio</button>
             <div class="content">
@@ -91,30 +106,31 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Seção de experiência profissional -->
         <section class="acordeon">
             <button class="trigger">Experiência</button>
             <div class="content">
                 <ul class="experience">
                     <li>
-                        <span class="title">Aluno do Ensino / SENAI-SP</span>
+                        <span class="title">Estudante do curso desenvolvimento de sistemas / SENAI-SP</span>
                         <p class="date">2025 - Current</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat tempore facere assumenda
-                            ullam, amet soluta asperiores delectus maiores dolorem ea totam. Sunt quo consequuntur
-                            reprehenderit omnis odio facilis vel architecto.</p>
+                            ullam, amet soluta asperiores delectus maiores dolorem ea totam...</p>
                     </li>
                     <hr>
                     <li>
                         <span class="title">Aluno do SESI / SP</span>
                         <p class="date">2025</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat tempore facere assumenda
-                            ullam, amet soluta asperiores delectus maiores dolorem ea totam. Sunt quo consequuntur
-                            reprehenderit omnis odio facilis vel architecto.</p>
+                            ullam, amet soluta asperiores delectus maiores dolorem ea totam...</p>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
 
+    <!-- Arquivo JavaScript que controla o acordeon -->
     <script src="./js/acordeon.js"></script>
 </body>
 
